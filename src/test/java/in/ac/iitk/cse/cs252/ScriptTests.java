@@ -73,16 +73,16 @@ public class ScriptTests {
     }
 
 //    // TODO: Uncomment this once you have coins on mainnet or testnet to check that transactions are working as expected.
-//    @Test
-//    public void testPayToPubKey() throws InsufficientMoneyException {
-//        try (ScriptTransaction payToPubKey = new PayToPubKey(networkParameters, new File(wallet_name), "password")) {
-//            testTransaction(payToPubKey);
-//
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//            Assert.fail(e.getMessage());
-//        }
-//    }
+    @Test
+    public void testPayToPubKey() throws InsufficientMoneyException {
+        try (ScriptTransaction payToPubKey = new PayToPubKey(networkParameters, new File(wallet_name), "password")) {
+            testTransaction(payToPubKey);
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            Assert.fail(e.getMessage());
+        }
+    }
 
     // TODO: Uncomment this when you are ready to test PayToPubKeyHash.
 //    @Test
@@ -96,15 +96,15 @@ public class ScriptTests {
 //    }
 
     // TODO: Uncomment this when you are ready to test LinearEquationTransaction.
-//    @Test
-//    public void testLinearEquation() throws InsufficientMoneyException {
-//        try (LinearEquationTransaction linEq = new LinearEquationTransaction(networkParameters, new File(wallet_name), "password")) {
-//            testTransaction(linEq);
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//            Assert.fail(e.getMessage());
-//        }
-//    }
+    @Test
+    public void testLinearEquation() throws InsufficientMoneyException {
+        try (LinearEquationTransaction linEq = new LinearEquationTransaction(networkParameters, new File(wallet_name), "password")) {
+            testTransaction(linEq);
+        } catch (Exception e) {
+            e.printStackTrace();
+            Assert.fail(e.getMessage());
+        }
+    }
 
     // TODO: Uncomment this when you are ready to test MultiSigTransaction.
     @Test

@@ -25,6 +25,7 @@ public class LinearEquationTransaction extends ScriptTransaction {
     public Script createInputScript() {
         // TODO: Create a script that can be spend by two numbers x and y such that x+y=first 4 digits of your iitk roll and |x-y|=last 4 digits of your suid (perhaps +1)
         ScriptBuilder builder = new ScriptBuilder();
+        //My Roll : 150035, I've used 150036.
         String firstHalf = "150", secondHalf="036";
         builder.op(OP_2DUP);
         builder.op(OP_ADD);
